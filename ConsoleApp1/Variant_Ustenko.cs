@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void VariantUstenko()
         {
-
+            Console.WriteLine("тест зв'язку між класами");
         }
 
     }

@@ -35,7 +35,7 @@ namespace ConsoleApp1
                         //метод заповнення рандомом
                         break;
                     case "3":
-                        //метод варіанту
+                        VariantUstenko();
                         break;
                     case "4":
                         //метод варіанту
@@ -49,13 +49,7 @@ namespace ConsoleApp1
                     default:
                         Console.WriteLine("Помилка! Не знайдено такого варіанту!\n");
                         break;
-
-
-
                 }
-
-
-
             }
         }
         static void ArrayPrint(int[] array)
