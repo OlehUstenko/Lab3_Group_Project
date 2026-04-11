@@ -38,7 +38,7 @@ namespace ConsoleApp1
                         VariantUstenko();
                         break;
                     case "4":
-                        //метод варіанту
+                        VariantTimofeiev();
                         break;
                     case "5":
                         //метод Варіанту
