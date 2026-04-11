@@ -15,6 +15,7 @@ namespace ConsoleApp1
 
             int maximum = array[0], minimum = array[0];
             int maximumIndx = 0, minimumIndx = 0;
+            int[] result = new int[array.Length];
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -29,6 +30,20 @@ namespace ConsoleApp1
                     minimum = array[i];
                 }
             }
+            if (maximumIndx < minimumIndx)
+            {
+                result = new int[array.Length - (minimumIndx - maximumIndx + 1)];
+                array[..maximumIndx].CopyTo(result, 0);
+                array[(minimumIndx + 1)..].CopyTo(result, maximumIndx);
+            }
+            else if (maximumIndx > minimumIndx)
+            {
+                result = new int[array.Length - (maximumIndx - minimumIndx + 1)];
+                array[..minimumIndx].CopyTo(result, 0);
+                array[(maximumIndx + 1)..].CopyTo(result, minimumIndx);
+            }
+
+            array = result;
 
         }
 
