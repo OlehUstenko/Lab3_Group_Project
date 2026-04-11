@@ -13,6 +13,17 @@ namespace ConsoleApp1
         static void VariantTimofeiev(ref int[] array)
         {
 
+            if (array == null || array.Length == 0)
+            {
+                Console.WriteLine("Масив порожній! Немає елементів для обробки.\n");
+                return;
+            }
+            else if (array.Length == 1)
+            {
+                Console.WriteLine("Масив містить лише один елемент! Немає максимуму та мінімуму для порівняння.\n");
+                return;
+            }
+
             int maximum = array[0], minimum = array[0];
             int maximumIndx = 0, minimumIndx = 0;
             int[] result = new int[array.Length];
