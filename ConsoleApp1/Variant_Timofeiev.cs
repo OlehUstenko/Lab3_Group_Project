@@ -23,6 +23,11 @@ namespace ConsoleApp1
                 Console.WriteLine("Масив містить лише один елемент! Немає максимуму та мінімуму для порівняння.\n");
                 return;
             }
+            else if (array.Length == 2)
+            {
+                array = null;
+                return;
+            }
 
             int maximum = array[0], minimum = array[0];
             int maximumIndx = 0, minimumIndx = 0;
