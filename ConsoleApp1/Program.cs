@@ -65,5 +65,66 @@ namespace ConsoleApp1
             }
             Console.WriteLine();
         }
+        static int[] FillingMethod()
+        {
+            Console.Write("Яким чином  бажаєте заповнити масив? \n" +
+               "(введіть 1) випадковим чином\n" +
+               "(введіть 2) вручну через пробіл\n" +
+               "Ваш вибір: ");
+            int choise = int.Parse(Console.ReadLine());
+            Console.Write("Введіть розмір масиву: ");
+            int size = int.Parse(Console.ReadLine());
+            int[] array = new int[size];
+
+            switch (choise)
+            {
+                case 1:
+                    array = RandomArray(size);
+                    break;
+                case 2:
+                    array = HandSpace(size);
+                    break;
+
+                default:
+                    Console.WriteLine("Некоректний вибір способу заповнення. Обрано рандом.");
+                    array = RandomArray(size);
+                    break;
+            }
+            return array;
+        }
+        static int[] HandSpace(int size)
+        {
+            Console.WriteLine("Введіть значення масиву через пробіл:");
+            string input = Console.ReadLine();
+
+            string[] parts = input.Split(' ', '\t');
+
+            int[] array = new int[size];
+
+            for (int i = 0; i < size; i++)
+            {
+                array[i] = int.Parse(parts[i]);
+            }
+            Console.WriteLine("\n");
+            return array;
+        }
+        static int[] RandomArray(int size)
+        {
+            Console.Write("Введіть мінімальне значення рандому: ");
+            int min = int.Parse(Console.ReadLine());
+
+            Console.Write("Введіть максимальне значення рандому: ");
+            int max = int.Parse(Console.ReadLine());
+
+            int[] array = new int[size];
+            Random random = new Random();
+
+            for (int i = 0; i < size; i++)
+            {
+                array[i] = random.Next(min, max);
+            }
+            Console.WriteLine("\n");
+            return array;
+        }
     }
 }
