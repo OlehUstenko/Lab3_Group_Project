@@ -43,20 +43,21 @@ namespace ConsoleApp1
             }
             if (maximumIndx < minimumIndx)
             {
-                result = new int[array.Length - (minimumIndx - maximumIndx + 1)];
-                array[..maximumIndx].CopyTo(result, 0);
-                array[(minimumIndx + 1)..].CopyTo(result, maximumIndx);
+                ExcludeRange(minimumIndx, maximumIndx, ref result);
             }
             else if (maximumIndx > minimumIndx)
             {
-                result = new int[array.Length - (maximumIndx - minimumIndx + 1)];
-                array[..minimumIndx].CopyTo(result, 0);
-                array[(maximumIndx + 1)..].CopyTo(result, minimumIndx);
+                ExcludeRange(maximumIndx, minimumIndx, ref result);
             }
 
             array = result;
 
         }
-
+        static void ExcludeRange(int first, int second, ref int[] result)
+        {
+            result = new int[array.Length - (first - second + 1)];
+            array[..second].CopyTo(result, 0);
+            array[(first + 1)..].CopyTo(result, second);
+        }
     }
 }
