@@ -12,8 +12,8 @@ namespace ConsoleApp1
             bool exit = false;
             while (!exit)
             {
-                Console.WriteLine("ЛАБОРАТОРНА РОБОТА 3 (БЛОК 1)" +
-                    "\nПоточний стан масиву: " );
+                Console.WriteLine("\nЛАБОРАТОРНА РОБОТА 3 (БЛОК 1)" +
+                    "\n\nПоточний стан масиву: " );
                 ArrayPrint(array);
 
                 Console.WriteLine("" +
@@ -36,7 +36,7 @@ namespace ConsoleApp1
                         array = RandomArray();
                         break;
                     case "3":
-                        VariantUstenko();
+                        VariantUstenko(ref array);
                         break;
                     case "4":
                         VariantTimofeiev(ref array);
