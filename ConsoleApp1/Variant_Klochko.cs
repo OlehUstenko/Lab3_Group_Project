@@ -1,4 +1,4 @@
-namespace ConsoleApp4
+namespace ConsoleApp1
 {
     public partial class Program
     {
