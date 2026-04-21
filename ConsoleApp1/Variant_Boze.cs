@@ -24,7 +24,7 @@ static int[] InputArray()
   int n = int.Parse(Console.ReadLine());
 
   int[] arr = new int[n];
-
+  
   for (int i = 0; i < n; i++)
   {
     Console.Write("arr[" + i + "] = ");
@@ -36,7 +36,7 @@ static int[] InputArray()
 
 static void PrintArray(int[] arr)
 {
-  for (int i = 0; i < arr.Lengh; i++)
+  for (int i = 0; i < arr.Length; i++)
   Console.Write(arr[i] + " ");
   Console.WriteLine();
 }
