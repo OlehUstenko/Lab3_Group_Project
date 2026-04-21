@@ -47,7 +47,7 @@ namespace ConsoleApp1
                         //метод Варіанту
                         break;
                     case "6":
-                        //метод Варіанту
+                        Variant6(ref array);
                         break;
                     case "7":
                         //метод Варіанту
