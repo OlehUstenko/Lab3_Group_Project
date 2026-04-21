@@ -21,7 +21,9 @@ class Program
 static int[] InputArray()
 {
   Console.Write("Кількість елементів: ");
-  int [] arr = new int[n];
+  int n = int.Parse(Console.ReadLine());
+
+  int[] arr = new int[n];
 
   for (int i = 0; i < n; i++)
   {
