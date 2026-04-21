@@ -7,10 +7,10 @@ class Program
     int[] arr = InputArray();
 
     Console.Write("Введіть К: ");
-    int k = int.Parse(Console.Readline());
+    int k = int.Parse(Console.ReadLine());
 
     Console.Write("Введіть Т: ");
-    int t = int.Parse(Console.Readline());
+    int t = int.Parse(Console.ReadLine());
 
     DeleteElements(ref arr, k, t);
 
