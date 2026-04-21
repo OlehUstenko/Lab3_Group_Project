@@ -2,7 +2,7 @@ namespace ConsoleApp1
 {
   public partial class Program
   {
-    static void Variant5(ref int[] arr)
+    static void Variant6(ref int[] arr)
     {
       if (arr == null)
       {
