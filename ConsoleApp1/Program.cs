@@ -50,7 +50,7 @@ namespace ConsoleApp1
                         Variant6(ref array);
                         break;
                     case "7":
-                        //метод Варіанту
+                        Variant4(ref array);
                         break;
                     case "0":
                         exit = true;
