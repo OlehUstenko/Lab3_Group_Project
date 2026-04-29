@@ -10,6 +10,8 @@ namespace ConsoleApp1
     {
         public static void VariantUstenko(ref int[] arr)
         {
+
+            // комент для коміта на нову гілку Oleh
             Console.WriteLine("Введіть скільки елементів треба знищити: ");
             int T = int.Parse(Console.ReadLine());
             Console.WriteLine("З якого елементу починати : ");
