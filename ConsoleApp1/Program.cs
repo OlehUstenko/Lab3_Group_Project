@@ -44,7 +44,7 @@ namespace ConsoleApp1
                         VariantTimofeiev(ref array);
                         break;
                     case "5":
-                        //метод Варіанту
+                        VariantSerafym(ref array);
                         break;
                     case "6":
                         Variant6(ref array);
