@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+
+    //створено гілку для варіанту Тимофєєва (Варіант 9)
+
     public partial class Program
     {
         static void VariantTimofeiev(ref int[] array)
